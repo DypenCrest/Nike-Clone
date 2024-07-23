@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  margin-inline: 3em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.brand {
+  display: flex;
+  justify-content: space-between;
+  height: 3em;
+  text-align: center;
+  align-items: center;
+  font-size: 12px;
+  padding-inline: 4em;
+  background-color: rgb(240, 240, 240);
+}
+
+.brand-link {
+  color: black;
+}
+
+.desktop-list {
+  display: flex;
+  list-style: none;
+}
+
+.desktop-list li {
+  display: flex;
+  align-items: center;
+}
+
+.desktop-list a {
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.vertical-line {
+  border-right: 1px solid;
+  height: 12px;
+  margin: 12px;
+}
+
+.nav-bar {
+  display: flex;
+  padding-inline: 3em;
+  height: 4em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 1em;
+  font-weight: 600;
+  width: 100%;
+  justify-content: center;
+  padding-left: 10em;
+  align-items: center;
+  height: 2em;
+}
+
+.nav-menu span {
+  padding: 3px;
+}
+
+.nav-menu span:hover {
+  border-bottom: 2px solid black;
+  cursor: pointer;
+}
+
+.first-head {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 10em;
+  background: radial-gradient(
+    circle,
+    rgba(253, 118, 0, 1) 14%,
+    rgba(255, 85, 0, 1) 50%,
+    rgba(31, 31, 31, 1) 100%
+  );
+  color: white;
+}
+
+.first-head h1 {
+  font-weight: 900;
+  font-size: 50px;
+}
+
+.first-head p {
+  font-size: 12px;
+  margin-bottom: 2em;
+}
+
+.btn-black {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  padding-inline: 8px;
+  height: 35px;
+  width: fit-content;
+  align-content: center;
+  font-size: smaller;
+  font-weight: bolder;
+}
+
+.main-content {
+  margin-top: 6em;
+  line-height: 4em;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 440px 440px 440px 440px 440px 440px;
+  gap: 1rem;
+  overflow: hidden;
+  height: 39rem;
+  margin-bottom: 8em;
+}
+.card-container:hover {
+  overflow-x: scroll;
+}
+
+.card {
+  cursor: pointer;
+  background-color: white;
+  animation: bgColor 5s infinite;
+  margin-bottom: 3em;
+}
+
+@keyframes bgColor {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: rgb(255, 94, 0);
+  }
+  100% {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+.card img {
+  transition: 0.5s;
+}
+
+.card img:hover {
+  transform: rotatey(180deg);
+  transition: 0.5s;
+}
+
+.featured-section {
+  display: grid;
+  grid-template-columns: auto auto;
+  overflow-x: hidden;
+  gap: 0.8em;
+  margin-bottom: 5rem;
+}
+
+.featured-figure {
+  width: 100%;
+  margin: 0;
+}
+
+.featured-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.featured-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.fig-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  padding: 10px;
+  z-index: 1;
+  color: rgb(255, 255, 255);
+}
+
+.btn-white {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 15px;
+  padding-inline: 8px;
+  height: 35px;
+  width: fit-content;
+  align-content: center;
+  font-size: smaller;
+  font-weight: bolder;
+}
+
+.btn-white:hover {
+  background-color: lightgray;
+}
+
+.gearup {
+  width: 100%;
+    margin-bottom: 8em;
+}
+
+.gear-img {
+  width: 100%;
+    margin-bottom: 2em;
+}
+
+.the-latest{
+  margin-bottom: 8em;
+}
+
+.member-section {
+  display: grid;
+  grid-template-columns: 440px 440px 440px 440px 440px 440px;
+  overflow-x: scroll;
+  gap: 0.8em;
+  margin-bottom: 5rem;
+}
+
+.member-figure {
+  width: 100%;
+  margin: 0;
+}
+
+.member-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.member-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.fig-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  padding: 10px;
+  z-index: 1;
+  color: rgb(255, 255, 255);
+}
